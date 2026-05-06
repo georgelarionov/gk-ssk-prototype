@@ -1,0 +1,57 @@
+.platform-root,
+.platform-root * {
+  box-sizing: border-box;
+}
+
+.platform-root button:hover {
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+
+.platform-root textarea::placeholder,
+.platform-root input::placeholder {
+  color: #a1a1a6;
+}
+
+.platform-root ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.platform-root ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.platform-root ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.18);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.platform-root ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes platform-typing-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+/* Stop-stream button: design uses graphite gray instead of destructive red */
+.platform-chat-shell button.bg-destructive {
+  background-color: #3a3a3c !important;
+  color: #ffffff !important;
+}
+.platform-chat-shell button.bg-destructive:hover {
+  background-color: #1d1d1f !important;
+}
